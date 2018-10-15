@@ -1,0 +1,23 @@
+.btnATooltip {
+  color: black;
+  margin: 0 10px -10px -20px;
+  background-color: cyan;
+  border: 5px;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  width: 150px;
+}
+
+.btnATooltip::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  margin-left: -95px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: cyan transparent transparent transparent;
+}

@@ -1,0 +1,23 @@
+<hr>
+<div class="center-block divContainer">
+
+  <div class="row">
+
+  </div>
+  <div class="row">
+    <button (click)="buttonAClicked()" class="btn btn-info  mr-2" value="BUTTON A">
+      <div *ngIf="tltpAVisiblity">
+        <tooltip-a [tltpAIsVisible]=tltpAVisiblity (visiblity)=recieveClickToolOnTipA($event)></tooltip-a>
+      </div>
+      BUTTON A
+    </button>
+    <button (click)="buttonBClicked()" class="btn btn-dark  mr-2" value="BUTTON B">
+      <div *ngIf="tltpBVisiblity">
+        <tooltip-b [tltpBIsVisible]=tltpBVisiblity (visiblity)=recieveClickToolOnTipB($event)></tooltip-b>
+      </div>
+      BUTTON B
+    </button>
+  </div>
+</div>
+
+<hr>

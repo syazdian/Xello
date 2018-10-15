@@ -1,0 +1,24 @@
+.btnBTooltip {
+
+  margin: 0 0px -10px 0;
+  background-color: palevioletred;
+  border: 5px;
+  border: 5px;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  width: 150px;
+}
+
+.btnBTooltip::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  margin-left: -125px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: palevioletred transparent transparent transparent;
+}
